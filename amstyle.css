@@ -1,0 +1,357 @@
+		span {
+			font-size: 20px;
+			color:  #e03bee ;
+			font-weight: BOLD;
+			
+			
+			}
+		 .button6, .button7 {
+            background-color: darkred;
+            font-size: 15px; 
+            padding: 5px 10px; 
+            border-radius: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+		
+ .divs {
+            display: flex;
+            gap: 20px; 
+            align-items: center;
+            justify-content: center;
+            /* Зафиксировано на экране */
+            bottom: 20px; /* Расположено внизу */
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Приоритет над другими элементами */
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+      
+         .button6:hover, .button7:hover {
+            background-color: purple;
+            transform: scale(1.1);
+			
+        }
+
+        .active-button {
+            background-color: purple; 
+        }
+		ol {
+			font-size: 25px;
+			text-align: left;
+
+
+
+
+}
+		body {
+			background-image: url('antimage.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+
+}
+		html, body {
+			margin: 0;
+			padding: 0;
+}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background: linear-gradient(180deg, white, blue, red);
+			position: fixed; 
+			top: 0;
+			max-width:620px;
+			z-index: 999999
+}
+
+		li {
+			float: left;
+			border-right: 1px solid #bbb;
+}
+
+		li:last-child {
+		border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+}
+
+
+
+li a:hover:not(.active) {
+  font-size: 19.7px;
+  background-color: gray ;
+  opacity: 50%;
+  color: cyan; 
+  text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
+ 
+}
+
+.glow {
+  font-size: 19px;
+  color: #fff;
+  text-shadow: 0 0 10px #8B0000, 0 0 20px #8B0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF4500, 0 0 60px #FF4500;
+}
+
+
+video {
+            width: 100px;
+            height: auto;
+            animation: resize 2s infinite;
+        }
+
+        @keyframes resize {
+            0%, 100% {
+                width: 100px;
+            }
+            50% {
+                width: 200px;
+            }
+        }
+		
+
+
+
+.bigsmall {
+	width: 200px;
+	height: 100px;
+	margin-bottom: 75px;
+	
+	
+}
+
+}
+.fix1 {
+	width: 230px;
+	height: 126px;
+	margin: 0px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	
+}
+.fix2 {
+	width: 630px;
+	height: auto;
+	margin: 0px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	
+}
+ footer {
+            text-align: center;
+            padding: 5px;
+            background-color: black;
+            color: red;
+            margin-top: 20px;
+			font-size: 13pxpx;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+			color: yellow;
+        }
+.yatoro {
+	font-size: 20px;
+			color: crimson;
+			font-weight: BOLD;
+			text-shadow: 0 0 10px black, 0 0 20px pink, 0 0 30px pink;
+	
+	
+}
+section {
+	width: 1893px;
+	background-image: url('fon.jpg');
+	background-repeat: none;
+	background-size: cover;
+	height: 420px;
+	border-radius: 10px;
+	--angle: 0deg;
+	border: 5px solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, gray, blue, magenta, orange, green, purple, pink, cyan, crimson, red) 1;
+	animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+	from {
+		--angle: 0deg;
+	}
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.ramka {
+	border-radius: 10px;
+	
+	margin: 7px;
+	border: 5px outset yellow;
+	width: 255px;
+	height: 375px;
+	
+	
+}
+.sprava {
+	
+	
+	
+  display: flex;
+}
+.spanL {
+	color: pink;
+	font-size: 25px;
+	 font-family: Arial, Helvetica, sans-serif;
+  
+  font-weight: 300;
+  font-style: normal;
+  
+	
+}
+.dymtro {
+	color: blue;
+	 font-family: Arial, Helvetica, sans-serif;
+ text-shadow: 0 0 10px blue;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;	
+	
+	
+	
+}
+.appwin {
+	color: gold;
+	font-size: 22px;
+	 font-family: Arial, Helvetica, sans-serif;
+ text-shadow: 0 0 10px  gold;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+.leaderboard-rank-value {
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.rank-tier-base {
+  width: 38%;
+  height: auto;
+}
+.rankyatoro {
+	font-size: 30px;
+	color: black;
+	
+	
+	
+	
+}
+.smaller {
+	width:80px;
+	height: auto;
+	
+	
+	
+}
+.rankds {
+	font-size: 15px;
+	color: white;
+	text-shadow: 0 0 3px black, 0 0 5px black, 0 0 6px black;
+	
+	display: flex;
+	margin-left: 33px;
+	margin-top: -27px;
+	
+	
+}
+.ypics {
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; /
+    gap: 10px;
+    margin-top: 50px;
+	margin-bottom: 40px;
+	
+}	
+
+.foto4ki {
+	border-radius: 30px;
+	width: auto;
+	height: 256px;
+	border: 2px solid pink;
+	transition: all 0.5s ease;
+	
+	
+	
+	
+}
+.foto4ki:hover {
+	transform: scale(1.02);
+ 
+	
+}
+
+body {
+    
+    background-color: black;
+}
+
+.cursor-trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+   pointer-events: none;
+    box-shadow: 0 0 10px crimson;
+    animation: fadeOut 0.4s linear forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+
+
+
+

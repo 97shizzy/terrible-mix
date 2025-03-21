@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    margin: 0;
+	overflow: hidden;
+}
+
+.scene {
+    width: 80px;
+    height: 80px;
+    perspective: 400px;
+}
+
+.cube {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: moveAround 4s infinite linear, rotateCube 4s infinite linear;
+	transition: transform 1s ease-in-out;
+}
+
+.face {
+	
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    --angle: 0deg;
+	border: 5px solid;
+	border-image: conic-gradient(from var(--angle), purple, blue, darkblue, lightblue, cyan, pink, purple) 1;
+	animation: rotate 1s linear infinite;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Расположение граней */
+.front  { transform: translateZ(42px); }
+.back   { transform: rotateY(180deg) translateZ(45px); }
+.left   { transform: rotateY(-90deg) translateZ(45px); }
+.right  { transform: rotateY(90deg) translateZ(45px); }
+.top    { transform: rotateX(90deg) translateZ(45px); }
+.bottom { transform: rotateX(-90deg) translateZ(45px); }
+
+/* Анимация вращения */
+@keyframes rotateCube {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+img {
+	height: 80px;
+	width: 80px;
+}
+@keyframes rotate {
+	from {
+		--angle: 0deg;
+	}
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}

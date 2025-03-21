@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<title>Morphling Guide</title>
+<head>
+    <style>
+        /* General body styling */
+        body {
+            background-image: url('morphling.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Buttons styling */
+        .button, .button2 {
+            padding: 15px 20px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button {
+            background: linear-gradient(to right, cyan, blue);
+            color: #fff;
+            border: none;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+        }
+
+        .button2 {
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(to right, red, black);
+            color: #fff;
+            border: 3px outset #000;
+        }
+
+        .button2:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Div styling */
+        .dv {
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            background-color: rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .dv:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.8);
+        }
+
+        /* Text animation */
+        .glow {
+            font-size: 20px;
+            text-align: center;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #006400, 0 0 20px #32CD32;
+            }
+            to {
+                text-shadow: 0 0 20px #00FF00, 0 0 30px #32CD32;
+            }
+        }
+
+        /* Guide link styling */
+        .guide {
+            padding: 20px 40px;
+            text-decoration: none;
+            color: yellow;
+            background: linear-gradient(135deg, cyan, blue, lightblue);
+            border-radius: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 30px;
+            text-shadow: 0 0 10px yellow, 0 0 30px orange;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        .guide:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(255, 255, 0, 0.8);
+        }
+
+        /* Footer animation */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+            animation: footer-glow 3s infinite alternate;
+        }
+
+        @keyframes footer-glow {
+            from {
+                color: cyan;
+            }
+            to {
+                color: lightgreen;
+            }
+        }
+
+        /* Image styling */
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.7);
+        }
+
+        /* Navigation buttons */
+        .divs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button6, .button7 {
+            background-color: darkred;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .button6:hover, .button7:hover {
+            transform: scale(1.1);
+            background-color: purple;
+        }
+
+        .active-button {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dv">
+        <h1>Morphling Dota 2</h1>
+        <p>A comprehensive guide about Morphling, his builds, and tips for mastering this hero.</p>
+    </div>
+
+    <div class="text">
+        <a href="https://www.dota2.com/hero/morphling" target="_blank">
+            <h3 style="color:white; text-align:center;">Learn More About Morphling</h3>
+        </a>
+    </div>
+
+    <form action="https://dota2protracker.com/hero/Morphling" target="_blank">
+        <button class="button">Builds Tracker for Morphling</button>
+    </form>
+
+    <form action="https://www.dota2.com" target="_blank">
+        <button class="button">Dota 2 Official Site</button>
+    </form>
+
+    <form action="https://www.dotabuff.com/players/321580662" target="_blank">
+        <button class="button">Yatoro's Dotabuff Profile</button>
+    </form>
+
+    <form action="https://www.dotabuff.com/players/1044002267" target="_blank">
+        <button class="button2">Satanic "Alan" Dotabuff</button>
+    </form>
+
+    <a href="guid.html" class="guide">Read the Detailed Guide</a>
+
+    <div>
+        <p class="glow">Morphling has skins like other heroes.</p>
+        <p class="glow">This is "Blade of Tears"</p>
+        <a href="https://steamcommunity.com/market/listings/570/Blade%20of%20Tears?filter=Blades" target="_blank">
+            <img src="morphhand.png" width="250" alt="Blade of Tears">
+        </a>
+        <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5b/Blade_of_Tears_ambient.gif/revision/latest?cb=20170503040725" width="300" alt="Blade of Tears Animation">
+    </div>
+
+    <div class="divs">
+        <div>
+            <form action="1.html" target="_blank">
+                <button id="button6" class="button6">Page 1</button>
+            </form>
+        </div>
+
+        <div>
+            <form action="2.html" target="_blank">
+                <button id="button7" class="button7">Page 2</button>
+            </form>
+        </div>
+    </div>
+
+    <marquee>
+        <footer>Created by 92% Morphling Winrate Player</footer>
+    </marquee>
+
+    <script>
+        const currentPage = window.location.href;
+        if (currentPage.includes('1.html')) {
+            document.getElementById('button6').classList.add('active-button');
+            document.getElementById('button7').classList.remove('active-button');
+        } else if (currentPage.includes('2.html')) {
+            document.getElementById('button6').classList.remove('active-button');
+            document.getElementById('button7').classList.add('active-button');
+        }
+    </script>
+</body>
+</html>
